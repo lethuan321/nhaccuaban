@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Nhạc Của Bạn</title>
+     <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f5f5f5;
+    }
+    .playlist ol {
+      counter-reset: song; /* reset bộ đếm */
+      padding: 0;
+      list-style: none;    /* bỏ số mặc định */
+    }
+    .playlist li {
+      counter-increment: song; /* tăng số thứ tự */
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      color: #fff;
+      padding: 15px;
+      margin-bottom: 10px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .playlist li::before {
+      content: counter(song) ". "; /* hiển thị số thứ tự */
+      font-weight: bold;
+      margin-right: 10px;
+      font-size: 18px;
+    }
+    .playlist li:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    .playlist li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      flex-grow: 1;
+    }
+  </style>
+</head>
+<body>
+<table border="0" cellspacing="0" cellpadding="10" width="100%" height="800px" style="border-collapse: collapse;">
+    <tr>
+        <th colspan="3" align="center" height="25%" 
+        style="background-image: url('anhnen.jpg');
+               background-size: cover;
+               background-repeat: no-repeat;
+               background-position: center;"  ></th>
+    </tr>
+    <tr height="5%">
+        <td colspan="3" align="center" bgcolor="aqua" >
+            <a href="gioithieu.html"style="padding: 10px 20px;">Giới Thiệu</a>
+            <a href="trangchu.html"style="padding: 10px 20px;">Trang Chủ</a>
+            <a href="hotro.html"style="padding: 10px 20px;">Hỗ Trợ</a>
+            <a href="contact.html"style="padding: 10px 20px;">Contact</a>
+            <a href="phaply.html"style="padding: 10px 20px;">Pháp Lý</a>
+
+        </td>
+    </tr>
+    <tr>
+        <td valign="top" align="center" width="15%" bgcolor="gray">  
+            <h3> Danh sách nhạc </h3>
+            <ul>
+                <li><a href="song1.mp4" target="noidung">Không Buông</a></li>
+                <li><a href="song2.mp4" target="noidung">Không Thời Gian</a></li>
+                <li><a href="song3.mp4" target="noidung">Chiếc Khăn Gió Ấm</a></li>
+                <li><a href="song4.mp4" target="noidung">Mơ</a></li>
+                <li><a href="song5.mp4" target="noidung">Vệt nắng nhạt phai</a></li>
+      </ul>
+        </td>
+        <td valign="top" align="center" style=" padding: 0; " bgcolor="pink">
+
+            <iframe name="noidung" width="100%" height="100%" src="modau.html" frameborder="0" allowfullscreen></iframe>
+        </td>
+        <td valign="top" width="15%" bgcolor="brown">
+            <p>
+                <strong>Nhạc Của Bạn</strong> mang đến trải nghiệm nghe nhạc hiện đại, nơi bạn có thể tạo playlist cá nhân, lưu trữ bài hát yêu thích và khám phá kho nhạc đa dạng từ nhiều thể loại.  
+        Âm nhạc không chỉ là giải trí, mà còn là cầu nối cảm xúc, giúp bạn tìm thấy sự đồng điệu và niềm vui trong cuộc sống.
+      </p>
+            </p>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="3" align="center" height="2%" bgcolor="aqua">
+            <h5>@Create by Lê Minh Thuận - DA25TTC</h5>
+        </td>
+    </tr>
+</table>
+</body>
